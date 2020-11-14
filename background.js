@@ -4,14 +4,14 @@ const fbGroupsCondition = {
 };
 
 // https://developer.chrome.com/extensions/webNavigation#event-onCommitted
-chrome.webNavigation.onCommitted.addListener(addParam, fbGroupsCondition);
+chrome.webNavigation.onCommitted.addListener(addSortingParam, fbGroupsCondition);
 // https://stackoverflow.com/questions/27239280/chrome-webnavigation-oncomplete-not-working
-chrome.webNavigation.onHistoryStateUpdated.addListener(addParam, fbGroupsCondition);
+chrome.webNavigation.onHistoryStateUpdated.addListener(addSortingParam, fbGroupsCondition);
 
-function addParam(tab) {
+function addSortingParam(tab) {
   const url = tab.url;
 
-  // Don't keep adding the param over and over...
+  // Don't add the param again if it's already there
   if (url.indexOf(orderingParam) != -1) return;
 
   const hashStart = (url.indexOf('#') === -1) ? url.length : url.indexOf('#');
