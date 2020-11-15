@@ -1,7 +1,7 @@
 {
-  "name": "Dena's FB groups extension!",
+  "name": "Chronological Facebook groups",
   "version": "1.0",
-  "description": "Make the groups be in time order!",
+  "description": "Make the posts in FB groups start with the most recent, instead of the random order that Facebook normally puts them in.",
   "permissions": ["webNavigation"],
   "background": {
     "scripts": ["background.js"],
