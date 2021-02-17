@@ -1,5 +1,7 @@
 Extension to sort posts in FB groups in chronological order.
 
+https://chrome.google.com/webstore/detail/chronological-facebook-gr/obijigeifipfbmbokaijdijmbeojbpmd
+
 Dena told me she was annoyed that every time she opened her "Everything is free"
 Facebook group to see if there were new posts, she had to change the setting to
 "recent posts first" to easily see what she wanted. Changing that setting adds a
